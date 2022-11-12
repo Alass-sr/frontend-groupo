@@ -1,0 +1,11 @@
+.connection-form {
+  display: flex;
+  justify-content: center;
+
+  .form-container {
+    background-color: aqua;
+    width: 250px;
+    height: 150px;
+    border: 1px black solid;
+  }
+}
