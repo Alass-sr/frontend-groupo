@@ -11,7 +11,7 @@ import Navbar from "./components/NavBar/Navbar";
 import Profile from "./components/Profile/Profile";
 
 // Importation du components Message
-import Message from "./components/Message/Message";
+import Message from "./pages/message";
 
 import "./css/app.css";
 

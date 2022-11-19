@@ -20,11 +20,13 @@ export default function Profile(props) {
   return (
     <div className="connection-form">
       <div className="form-container">
-        <ul>
-          <li onClick={handleModals} id="register">
+        <ul className="log">
+          <li onClick={handleModals} id="register"
+           className={signUpModal ? "active-btn" : null}>
             S'inscrire
           </li>
-          <li onClick={handleModals} id="login">
+          <li onClick={handleModals} id="login"
+           className={signInModal ? "active-btn" : null}>
             Se connecter
           </li>
         </ul>

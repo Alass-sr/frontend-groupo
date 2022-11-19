@@ -6,12 +6,7 @@
   user-select: none;
   text-align: center;
 }
-ul {
-  cursor: pointer;
-  padding: 10px;
-  display: flex;
-  justify-content: space-around;
-}
+
 #register,
 #login {
   width: 130px;
@@ -20,4 +15,24 @@ ul {
   cursor: pointer;
   transition: 0.3s;
   box-shadow: 3px 3px 1px rgba(51, 51, 51, 0.418);
+}
+
+.log {
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.log li:hover {
+  background-color: greenyellow;
+}
+.active-btn {
+  font-weight: bold;
+}
+
+form {
+  width: 400px;
+  margin: 10px auto 0;
+  padding: 20px;
+
 }
