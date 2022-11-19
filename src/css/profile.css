@@ -1,10 +1,23 @@
 .connection-form {
-  border: none;
-    
-    min-width: 490px;
-    width: 90%;
-    text-align: center;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 20px;
+  border: 2px solid green;
+  width: 400px;
+  margin: 35px auto 0;
+  padding: 20px 0;
+  user-select: none;
+  text-align: center;
+}
+ul {
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+#register,
+#login {
+  width: 130px;
+  padding: 10px 0;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 3px 3px 1px rgba(51, 51, 51, 0.418);
 }
