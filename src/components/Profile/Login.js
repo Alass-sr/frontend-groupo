@@ -43,6 +43,7 @@ const SignInForm = () => {
       <div className="email error"></div>
       <br />
       <label htmlFor="password">Mot de passe</label>
+      <br />
       <input
         name="password"
         id="password"

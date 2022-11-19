@@ -1,15 +1,17 @@
 // Importation de react
 import React from 'react'
 // Imporation de Link de Router
-import {Link} from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 
 export default function Navbar() {
   return (
-    <nav>
-        <Link to="/">Accueil</Link>
-        <Link to="/Profil">Profil</Link>
-    </nav>
+    <div className="navbar">
+      <ul>
+        <li><NavLink to="/home" className={({isActive}) => (isActive ? "activeLink" : null)}>Accueil</NavLink></li>
+        <li><NavLink to="/profil" className={({isActive}) => (isActive ? "activeLink" : null)}>Profil</NavLink></li>
+      </ul>
+    </div>
   )
     
 }

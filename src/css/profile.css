@@ -1,0 +1,10 @@
+.connection-form {
+  border: none;
+    
+    min-width: 490px;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+}
