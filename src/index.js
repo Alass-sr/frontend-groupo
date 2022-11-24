@@ -6,10 +6,13 @@ import App from "./App";
 import "./css/app.css";
 // importation du router
 import { BrowserRouter } from "react-router-dom";
+import { AuthProvider } from "./context/auth";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
-    <App />
+    <AuthProvider>
+      <App />
+    </AuthProvider>
   </BrowserRouter>
 );
