@@ -19,6 +19,7 @@ export function Profile() {
 
   const onChangeAdmin = async (e) => {
     await updateUser(e.target.checked);
+    localStorage.setItem("isAdmin", e.target.checked);
     fetchUser();
   };
 
