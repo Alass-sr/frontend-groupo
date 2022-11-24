@@ -5,8 +5,10 @@ export function Profile() {
   const [user, setUser] = React.useState();
 
   const fetchUser = async () => {
-    const user = await getCurrentUser(localStorage.getItem("userId"));
-    setUser(user);
+    try {
+      const user = await getCurrentUser(localStorage.getItem("userId"));
+      setUser(user);
+    } catch (error) {}
   };
 
   const updateUser = async (isAdmin) => {
@@ -18,8 +20,9 @@ export function Profile() {
   };
 
   const onChangeAdmin = async (e) => {
+    e.preventDefault();
     await updateUser(e.target.checked);
-    localStorage.setItem("isAdmin", e.target.checked);
+    localStorage.setItem("isAdmin", !e.target.checked);
     fetchUser();
   };
 
@@ -41,7 +44,7 @@ export function Profile() {
               <input
                 onChange={onChangeAdmin}
                 style={{ transform: "scale(1.5)", marginLeft: 10 }}
-                type={"checkbox"}
+                type="checkbox"
                 checked={user.isAdmin}
               />
             </h3>
